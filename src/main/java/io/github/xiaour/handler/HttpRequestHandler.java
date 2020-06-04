@@ -1,27 +1,17 @@
 package io.github.xiaour.handler;
 
 import io.github.xiaour.abs.AbsBootDogServlet;
-import io.github.xiaour.config.ServletMappingConfig;
 import io.github.xiaour.controller.BootdogPageNotFoundController;
-import io.github.xiaour.mapping.ServletMapping;
 import io.github.xiaour.request.BootRequest;
-import io.github.xiaour.response.BootResponse;
-import io.github.xiaour.startup.BootdogApplication;
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
-import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.handler.codec.http.*;
-import io.netty.util.CharsetUtil;
+import io.netty.handler.codec.http.HttpObject;
+import io.netty.handler.codec.http.HttpRequest;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.util.HashMap;
 import java.util.Map;
 
 /**
