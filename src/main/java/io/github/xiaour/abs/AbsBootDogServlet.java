@@ -2,7 +2,6 @@ package io.github.xiaour.abs;
 
 import io.github.xiaour.enums.RequestMethod;
 import io.github.xiaour.request.BootRequest;
-import io.github.xiaour.response.BootResponse;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.FullHttpResponse;
 import org.apache.commons.logging.Log;
@@ -12,7 +11,7 @@ import java.io.IOException;
 
 /**
  * @author zhangtao
- * @Class AbsServlet
+ * @Class AbsBootDogServlet
  * @Description
  * @Date 2020/5/12 10:06
  * @Version 1.0.0
